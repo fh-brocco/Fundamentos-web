@@ -1,67 +1,146 @@
 /*Estilo da página*/
 
+body {
+    font: 12px Verdana, sans-serif;
+}
+
 h1 {
     text-align: center;
-    color: crimson;
+    color: aliceblue;
     margin: 2%;
 }
 
 h2 {
     text-align: center;
-    color: crimson;
+    color: aliceblue;
     margin: 2%;
-} 
+}
+
 
 /*Configuração menu*/
-.menu li {
-    display: inline;
-    padding: 50px;
-    list-style: none;
+
+
+#conteudo {
+    position: relative;
+    width: 70%;
+    float: right;
+    text-align: center;
 }
 
-.menu li a {
-    text-decoration: overline;
-    color: crimson;
-    margin-left: 5px;
-    font-size: 20px;
+#menu {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    float: left;
 }
 
-.menu li a:hover {
-    color: cornflowerblue;
+#menu ul li {
+    margin: 0;
+    padding: 0px;
+    border-bottom: 1px solid rgb(5, 5, 5);
+    text-align: left;
+    list-style-type: none;
+}
+
+#menu a:link {
+    background: #272626;
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+
+#menu a:hover {
+    background: #3d67a3;
+    color: rgb(255, 255, 255);
 }
 
 /*Midias*/
+.video {
+    position: relative;
+    width: 70%;
+    float: right;
+    text-align: center;
+}
 
 .container {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: right;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 250px;
+
 }
 
-.img{
-    width: 120px;
-    margin: 0%;
+.img {
+    width: 200px;
+    margin-left: 5%;
     justify-content: flex-start;
 }
 
-.imgborder{
+.imgborder {
     border-radius: 50%;
     width: 100px;
 }
 
-.margemesquerda{
+.margemEsquerda {
     margin-left: 50px;
 }
-/*Radapé*/
 
-.logo{
+.margemBaixo{
+    margin-bottom: 250px;
+}
+
+/*Rodapé*/
+
+.margemRodape {
+    margin-left: 150px;
+
+}
+
+.logo {
     width: 40px;
     height: 40px;
     padding: 20px;
-    justify-content: end ;
+    justify-content: end;
 }
 
-.center {
+.hr-top {
+    width: 91%;
+}
+
+p {
+    color: aliceblue;
+}
+
+.text {
+    color: aliceblue;
+    width: 70%;
+    float: right;
+    text-align: justify;
+
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 91%;
+    background-color: none;
     text-align: center;
+    align-items: baseline;
+    float: right;
+    margin-top: 50px;
+}
+
+.sobre {
+    color: aliceblue;
+    width: 70%;
+    float: right;
+    text-align: justify;
+    margin-top: 70px;
+
 }
